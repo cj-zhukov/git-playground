@@ -1,7 +1,12 @@
 from calc import get_num, add
 
-if __name__ == "__main__":
+
+def test_app():
     a = get_num(1)
     b = get_num(41)
     res = add(a, b)
-    print(res)
+    assert res == 42
+
+
+if __name__ == "__main__":
+    test_app()
